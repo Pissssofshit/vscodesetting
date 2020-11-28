@@ -1,0 +1,259 @@
+// Place your key bindings in this file to override the defaults
+[
+	
+	{
+		"key": "tab",
+		"command": "extension.vim_tab",
+		"when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert' && editorLangId != 'magit'"
+	},
+	{
+		"key": "tab",
+		"command": "-extension.vim_tab",
+		"when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+	},
+	{
+		"key": "x",
+		"command": "magit.discard-at-point",
+		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+	},
+	{
+		"key":"ctrl+x ctrl+d",
+		"command":"editor.action.goToDeclaration"
+	},
+	{
+		"key": "k",
+		"command": "-magit.discard-at-point"
+	},
+	{
+		"key": "-",
+		"command": "magit.reverse-at-point",
+		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+	},
+	{
+		"key": "v",
+		"command": "-magit.reverse-at-point"
+	},
+	{
+		"key": "shift+-",
+		"command": "magit.reverting",
+		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+	},
+	{
+		"key": "shift+v",
+		"command": "-magit.reverting"
+	},
+	{
+		"key": "shift+o",
+		"command": "magit.resetting",
+		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+	},
+	{
+		"key": "shift+x",
+		"command": "-magit.resetting"
+	},
+	{
+		"key": "x",
+		"command": "-magit.reset-mixed"
+	},
+	{
+		"key": "ctrl+u x",
+		"command": "-magit.reset-hard"
+	},
+	{
+		"key": "y",
+		"command": "-magit.show-refs"
+	},
+	{
+		"key": "y",
+		"command": "vspacecode.showMagitRefMenu",
+		"when": "editorTextFocus && editorLangId == 'magit' && vim.mode == 'Normal'"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "workbench.action.quickOpenSelectNext",
+		"when": "inQuickOpen"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "workbench.action.quickOpenSelectPrevious",
+		"when": "inQuickOpen"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "selectNextSuggestion",
+		"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+	},
+	{
+		"key": "tab",
+		"command": "selectNextSuggestion",
+		"when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+ },
+ {
+		"key": "shift+tab",
+		"command": "selectPrevSuggestion",
+		"when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+ },
+	{
+		"key": "ctrl+k",
+		"command": "selectPrevSuggestion",
+		"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "acceptSelectedSuggestion",
+		"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "showNextParameterHint",
+		"when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "showPrevParameterHint",
+		"when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "file-browser.stepOut",
+		"when": "inFileBrowser"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "file-browser.stepIn",
+		"when": "inFileBrowser"
+	},
+	{
+		"key": "cmd+p",
+		"command":"whichkey.show"
+	},
+	{
+        "key": "j",
+        "command": "cursorDown",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal' && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+    },
+    {
+        "key": "k",
+		"command": "cursorUp",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'&& !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+    },
+    {
+        "key": "up",
+        "command": "-extension.vim_up",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+    },
+    {
+        "key": "down",
+        "command": "-extension.vim_down",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+	},
+	{
+		"key": "ctrl+x ctrl+f",
+		"command":"file-browser.open"
+	},
+	{
+		"key":"ctrl+r",
+		"command":"editor.action.goToReferences"
+	},
+	{
+		"key":"ctrl+j",
+		"command":"editor.action.goToDeclaration"
+	},
+	{
+		"key": "ctrl+o",
+		"command": "workbench.action.navigateBack"
+	},
+	{
+		"key": "ctrl+-",
+		"command": "-workbench.action.navigateBack"
+	},
+	{
+		"key":"ctrl+x ctrl+j",
+		"command": "bookmarksExplorer.resetViewLocation"
+	},
+	{
+		"key": "enter",
+		"command": "-renameFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "ctrl+w",
+		"command": "-workbench.action.switchWindow"
+	},
+	{
+		"key": "j",
+		"command": "-list.focusDown",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "j",
+		"command": "list.focusDown",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "down",
+		"command": "-list.focusDown",
+		"when": "listFocus && !inputFocus"
+	},
+	{
+		"key": "ctrl+x ctrl+j",
+		"command": "workbench.action.terminal.toggleTerminal"
+	},
+	{
+		"key": "ctrl+w ctrl+k",
+		"command": "workbench.action.navigateUp"
+	},
+	{
+		"key": "ctrl+w ctrl+j",
+		"command": "workbench.action.navigateDown"
+	},
+	{
+		"key": "ctrl+w ctrl+h",
+		"command": "workbench.action.navigateLeft"
+	},
+	{
+		"key": "ctrl+w ctrl+l",
+		"command": "workbench.action.navigateRight"
+	},
+	{
+		"key": "ctrl+x ctrl+j",
+		"command":"workbench.explorer.fileView.focus"
+	},
+	{
+	"key":"ctrl+x ctrl+x",
+	"command":"workbench.action.showAllEditorsByMostRecentlyUsed"
+	},
+	{
+		"key": "ctrl+x ctrl+p",
+		"command": "workbench.action.quickOpenRecent"
+	},
+	{ 	
+		"key": "space",
+		"command": "whichkey.show",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
+	},
+	{
+		"key": "space",
+		"command": "-filesExplorer.openFilePreserveFocus",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
+	},
+	{
+		"key":"j",
+		"command":"list.focusDown",
+		"when": "listFocus"
+	},
+	{
+		"key":"k",
+		"command":"list.focusUp",
+		"when": "listFocus"
+	},
+	{
+		"key":"ctrl+x ctrl+j",
+		"command":"terminalHere.create"
+	},
+	{
+		"key":"ctrl+i",
+		"command":"workbench.action.navigateForward"
+	}
+
+]

@@ -1,0 +1,328 @@
+{
+    "go.useLanguageServer": true,
+    "[go]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+        "editor.snippetSuggestions": "none"
+    },
+    "[go.mod]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "gopls": {
+        "usePlaceholders": true,
+        "staticcheck": false
+    },
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "m"],
+            "commands": [
+                "bookmarks.toggle"
+            ]
+        },
+        {
+            "before": ["<leader>", "b"],
+            "commands": [
+                "bookmarks.list"
+            ]
+        }
+    ],
+    
+    "vim.leader": ",",
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": [
+        "#8FBCBB",
+        "#434C5E"
+    ],
+    "vim.statusBarColors.insert": "#BF616A",
+    "vim.statusBarColors.visual": "#B48EAD",
+    "vim.statusBarColors.visualline": "#B48EAD",
+    "vim.statusBarColors.visualblock": "#A3BE8C",
+    "vim.statusBarColors.replace": "#D08770",
+    "vim.statusBarColors.commandlineinprogress": "#007ACC",
+    "vim.statusBarColors.searchinprogressmode": "#007ACC",
+    "vim.statusBarColors.easymotionmode": "#007ACC",
+    "vim.statusBarColors.easymotioninputmode": "#007ACC",
+    "vim.statusBarColors.surroundinputmode": "#007ACC",
+    "terminal.integrated.fontFamily": "Menlo for Powerline",
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 14,
+    "files.autoSaveDelay": 100,
+    "javascript.validate.enable": false,
+    "standard.autoFixOnSave": true,
+    "sync.gist": "31cf39af307844b8888c4908bb28e280",
+    "vscode-neovim.neovimExecutablePaths.darwin": "/Users/huangxiaoshuai/Downloads/nvim-osx64/bin/nvim",
+    "scrolloff.alwaysCenter": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#B48EAD",
+        "statusBar.noFolderBackground": "#B48EAD",
+        "statusBar.debuggingBackground": "#B48EAD",
+        "statusBar.foreground": "#434C5E"
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.editor.enablePreview": false,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+          "before": ["<space>"],
+          "commands": ["whichkey.show"]
+        }
+      ],
+      "vim.visualModeKeyBindingsNonRecursive": [
+        {
+          "before": ["<space>"],
+          "commands": ["whichkey.show"]
+        }
+      ],
+      "window.zoomLevel": 0,
+      "whichkey.bindings": [
+          {
+            "key":" ",
+            "name":"command",
+            "type":"command",
+            "command":"workbench.action.showCommands"
+          },
+        {
+            "key": "t",
+            "name": "terminal...",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "n",
+                    "name": "new a terminal",
+                    "type": "command",
+                    "command": "workbench.action.terminal.new"
+                },
+                {
+                    "key":"N",
+                    "name": "new a terminal here",
+                    "type":"command",
+                    "command":"terminalHere.create"
+                },
+                {
+                    "key": "k",
+                    "name": "next terminal",
+                    "type": "command",
+                    "command": "workbench.action.terminal.focusNext"
+                },
+                {
+                    "key": "j",
+                    "name": "preview terminal",
+                    "type": "command",
+                    "command": "workbench.action.terminal.focusPrevious"
+                },
+                {
+                    "key": "c",
+                    "name": "close terminal",
+                    "type": "command",
+                    "command": "workbench.action.closePanel"
+                },
+                {
+                    "key": "t",
+                    "name": "toggle terminal",
+                    "type": "command",
+                    "command": "workbench.action.terminal.toggleTerminal"
+                }
+            ]
+        },
+        {
+            "key": "s",
+            "name": "search...",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "s",
+                    "name": "symbol in the file",
+                    "type": "command",
+                    "command": "workbench.action.gotoSymbol"
+                },
+                {
+                    "key": "S",
+                    "name": "symbol in the workspace",
+                    "type": "command",
+                    "command": "workbench.action.showAllSymbols"
+                }
+            ]
+        },
+        {
+            "key": "b",
+            "name": "Side Bar...",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "f",
+                    "name": "focus on explorer",
+                    "type": "command",
+                    "command": "workbench.explorer.fileView.focus"
+                },
+                {
+                    "key": "b",
+                    "name": "focus on bookmark",
+                    "type": "command",
+                    "command": "workbench.view.extension.bookmarks"
+                },
+                {
+                    "key": "b",
+                    "name": "toggle side bar",
+                    "type": "command",
+                    "command": "workbench.action.toggleSidebarVisibility"
+                }
+            ]
+        },
+        {
+            "key": "c",
+            "name": "Personal Config...",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "k",
+                    "name": "keybinding file(JSON)",
+                    "type":"command",
+                    "command": "workbench.action.openGlobalKeybindingsFile"
+                },
+                {
+                    "key": "s",
+                    "name": "setting file(JSON)",
+                    "type":"command",
+                    "command": "workbench.action.openSettingsJson"
+                },
+            ]
+        },
+        {
+            "key": "e",
+            "name":"Edit...",
+            "type":"bindings",
+            "bindings":[
+                {
+                    "key": "f",
+                    "name": "Fold...",
+                    "type": "bindings",
+                    "bindings": [
+                        {
+                            "key": "F",
+                            "name": "unfold",
+                            "type": "command",
+                            "command": "editor.unfold"
+                        },
+                        {
+                            "key": "f",
+                            "name": "fold",
+                            "type": "command",
+                            "command": "editor.fold"
+                        },
+                        {
+                            "key": "0",
+                            "name": "unfold all",
+                            "type": "command",
+                            "command": "editor.unfoldAll"
+                        },
+                        {
+                            "key": "1",
+                            "name": "fold level 1",
+                            "type": "command",
+                            "command": "editor.foldLevel1"
+                        },
+                        {
+                            "key": "2",
+                            "name": "fold level 2",
+                            "type": "command",
+                            "command": "editor.foldLevel2"
+                        },
+                        {
+                            "key": "3",
+                            "name": "fold level 3",
+                            "type": "command",
+                            "command": "editor.foldLevel3"
+                        },
+                        {
+                            "key": "4",
+                            "name": "fold level 4",
+                            "type": "command",
+                            "command": "editor.foldLevel4"
+                        },
+                        {
+                            "key": "5",
+                            "name": "fold level 5",
+                            "type": "command",
+                            "command": "editor.foldLevel5"
+                        },
+                        {
+                            "key": "6",
+                            "name": "fold level 6",
+                            "type": "command",
+                            "command": "editor.foldLevel6"
+                        },
+                        {
+                            "key": "7",
+                            "name": "fold level 7",
+                            "type": "command",
+                            "command": "editor.foldLevel7"
+                        }
+                    ]
+                }
+    
+            ]
+        },
+        {
+            "key": "f",
+            "name": "File...",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "t",
+                    "name": "file tree",
+                    "type": "command",
+                    "command": "workbench.explorer.fileView.focus"
+                },
+                {
+                    "key": "T",
+                    "name": "close file tree",
+                    "type": "command",
+                    "command": "workbench.action.closeSidebar"
+                },
+                {
+                    "key": "r",
+                    "name": "recent files",
+                    "type": "command",
+                    "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
+                },
+                {
+                    "key": "R",
+                    "name": "rename current files",
+                    "type": "command",
+                    "command": "renameFile"
+                },
+                {
+                    "key": "c",
+                    "name": "compare with saved files",
+                    "type": "command",
+                    "command": "workbench.files.action.compareWithSaved"
+                },
+           ]
+        }
+    ],
+    "search.exclude": {
+        "**/.git": true,
+        "**/.pb.go": true,
+        "**/*.bm.go": true,
+        "**/*.pb.go": true,
+        "**/api.bm.go": true,
+        "**/bower_components": true,
+        "**/node_modules": true,
+        "**/tmp": true
+    },
+    "files.exclude": {
+        "**/*.pb.go": true,
+        "**/api.bm.go": true,
+        "**/.pb*":true
+    },
+      
+  }
